@@ -14,5 +14,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ADD /app/ .
+ADD /test/AppleAndBanana.mp4 .
+ADD /test/BananaAndApple.mp4 .
 
 CMD [ "python", "-u", "./main.py" ]
