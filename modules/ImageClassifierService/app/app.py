@@ -61,9 +61,11 @@ def predict_image_handler():
 
                 if "bear" in tags and notification_sent == False:
                     push_notification()
+                    notification_sent = True
         else:
             if notification_sent == False:
                 push_notification()
+                notification_sent = True
 
         return json.dumps(results)
     except Exception as e:
