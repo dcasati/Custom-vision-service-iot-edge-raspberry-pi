@@ -2,6 +2,8 @@
 from urllib.request import urlopen
 
 import tensorflow as tf
+import requests
+from urllib.request import urlopen
 
 from PIL import Image
 import numpy as np
